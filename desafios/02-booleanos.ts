@@ -1,30 +1,33 @@
 // Boleanos
 
-const user = {
+const getUserUniqueFromMemory = {
   name: 'Diego Fernandes',
   height: 190,
   hasTicket: true,
-}
+};
 
-const necessaryHeight = 130
+const userAmountHeight = 130;
 
-const currentHour = new Date().getHours()
+const currentTimeHour = new Date().getHours()
 
-const parkOpen = currentHour > 9 && currentHour < 18
+const parkHourOpen = 9;
+const parkHourClosed = 18
 
-if (!parkOpen) {
+const isParkOpen = currentTimeHour > parkHourOpen && currentTimeHour < parkHourClosed
+
+if (!isParkOpen) {
   throw new Error('O parque está fechado!')
 }
 
-const ticket = user.hasTicket
+const isTicketApproved = getUserUniqueFromMemory.hasTicket
 
-if (!ticket) {
+if (!isTicketApproved) {
   throw new Error('O Diego não possui um bilhete para entrar no parque!')
 }
 
-const enterToy = user.height > necessaryHeight
+const isHeightAccept = getUserUniqueFromMemory.height > userAmountHeight
 
-if (!enterToy) {
+if (!isHeightAccept) {
   throw new Error('O Diego não pode entrar no brinquedo!')
 } 
 
