@@ -6,7 +6,7 @@ const getUserUniqueFromMemory = {
   hasTicket: true,
 };
 
-const userAmountHeight = 130;
+const minHeightUser = 130;
 
 const currentTimeHour = new Date().getHours()
 
@@ -25,7 +25,7 @@ if (!isTicketApproved) {
   throw new Error('O Diego não possui um bilhete para entrar no parque!')
 }
 
-const isHeightAccept = getUserUniqueFromMemory.height > userAmountHeight
+const isHeightAccept = getUserUniqueFromMemory.height > minHeightUser
 
 if (!isHeightAccept) {
   throw new Error('O Diego não pode entrar no brinquedo!')
