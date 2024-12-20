@@ -1,6 +1,6 @@
 // Boleanos
 
-const getUserUniqueFromMemory = {
+const getUserObjectFromMemory = {
   name: 'Diego Fernandes',
   height: 190,
   hasTicket: true,
@@ -19,13 +19,13 @@ if (!isParkOpen) {
   throw new Error('O parque está fechado!')
 }
 
-const isTicketApproved = getUserUniqueFromMemory.hasTicket
+const isTicketApproved = getUserObjectFromMemory.hasTicket
 
 if (!isTicketApproved) {
   throw new Error('O Diego não possui um bilhete para entrar no parque!')
 }
 
-const isHeightAccept = getUserUniqueFromMemory.height > minHeightUser
+const isHeightAccept = getUserObjectFromMemory.height > minHeightUser
 
 if (!isHeightAccept) {
   throw new Error('O Diego não pode entrar no brinquedo!')
