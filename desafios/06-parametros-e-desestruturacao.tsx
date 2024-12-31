@@ -21,3 +21,8 @@ const userRepository = {
     }
   },
 };
+
+
+// paramêtros nomeados
+// receber objetos como paramêtros
+// devolver em formato de objeto
