@@ -11,5 +11,13 @@ function updateUserController({ name, email, password }, { id }) {
 
 const userRepository = {
   update: ({ body, params }) => {
+    const { name, email, password } = body;
+    const { id } = params;
+
+    const { user } = createUserOnDatabase({ name, email, password}, { id });
+
+    return {
+      user
+    }
   },
 };
