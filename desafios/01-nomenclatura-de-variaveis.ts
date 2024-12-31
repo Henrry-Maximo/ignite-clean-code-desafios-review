@@ -1,7 +1,7 @@
 // Nomenclatura de variáveis
 
 // status e seguidores vindos da memória
-const statusAndFollowingFromMemory = [
+const mentoryByFollowingFromMemory = [
   {
     title: 'User',
     followers: 5
@@ -39,7 +39,7 @@ export default async function getProfileFromGithub(req, res) {
 
   const userFromGithub = await response.json()
 
-  const orderByFollowingList = statusAndFollowingFromMemory.sort((a, b) =>  b.followers - a.followers); 
+  const orderByFollowingList = mentoryByFollowingFromMemory.sort((a, b) =>  b.followers - a.followers); 
 
   const categoryUserFromGithub = orderByFollowingList.find(i => userFromGithub.followers > i.followers)
 
