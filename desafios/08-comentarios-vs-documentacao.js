@@ -7,7 +7,9 @@
 async function registerUserInDatabase(data) {
   const { email, name, avatar } = data;
 
-  if (!avatar || !email || !name) return { error: 'avatar or email or name is required' }
+  if (!avatar || !email || !name) return { 
+    error: 'avatar or email or name is required' 
+  }
 
   const userMail = getUserByEmail(email);
 
