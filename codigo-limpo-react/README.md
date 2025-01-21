@@ -8,3 +8,7 @@ component
 - 4. Functions pure: not dependency of informations extern, only there is necessary of
 parameters required. Her not dependency of any middle extern. In comment previous, is established that if there is presence of functions, variables, etc, at code. Is necessary perform a component. But, i mean, when necessary, creating a component pure,
 i.e, that will receive an function or something of type. Warning: have careful at time of transfer the logic of component.
+- 5. Always use ´on´ or ´handle´... always that will creating an function in of
+component and it's function is user triggered using an event, i.e: `onClick`, `onSubmit`, etc. Always prefix with 'handle', how example: handleCreateNewTodo. For functions auxiliaries use `on`, how example:
+functions of calculate.
+
