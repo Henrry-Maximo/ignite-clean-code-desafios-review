@@ -109,3 +109,26 @@ class CreateOrder {
     // SubmitOrderInvoice
   }
 }
+
+
+
+# DDD
+- Domain Drive Design (design dirigido à domínio): design of software, beforce of any development.
+- 1. Exists dominions and subdominions
+      - Logistics
+      - Billing
+      - Payment
+      - Stock
+
+- Domain Experts: 
+  - Entity -> 
+  - Cases of use -> actions between entity
+
+- Experience Experts:
+  - Get the **order of orders** and *emit* **bill**
+
+----------------
+
+User:
+  - client
+  - destiny
