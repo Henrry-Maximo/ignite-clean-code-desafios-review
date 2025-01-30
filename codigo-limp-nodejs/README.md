@@ -111,7 +111,6 @@ class CreateOrder {
 }
 
 
-
 # DDD
 - Domain Drive Design (design dirigido à domínio): design of software, beforce of any development.
 - 1. Exists dominions and subdominions
@@ -120,8 +119,11 @@ class CreateOrder {
       - Payment
       - Stock
 
+- Dominion -> problem and context.
+- Subdominions -> can be considered micro services depending of architecture
+
 - Domain Experts: 
-  - Entity -> 
+  - Entity -> They are actors within of each subdominion that we have
   - Cases of use -> actions between entity
 
 - Experience Experts:
@@ -131,4 +133,4 @@ class CreateOrder {
 
 User:
   - client
-  - destiny
+  - destiny 
