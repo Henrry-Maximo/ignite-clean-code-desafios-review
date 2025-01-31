@@ -134,3 +134,23 @@ class CreateOrder {
 User:
   - client
   - destiny 
+
+----------------
+
+Software -> is a organism alive and he not is representation of database, because when the people begging software development, always starting by database (tables -> entity).
+
+Application -> Operate normally without database. Using tests automated for to guarantee the operation of rules business, same without the database.
+
+----------------
+
+# Customers
+
+- id
+- name
+- email
+- document
+- street
+- number
+- zipcode
+
+The entity at code not need reflect the screatured 
